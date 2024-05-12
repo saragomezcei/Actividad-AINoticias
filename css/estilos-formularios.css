@@ -61,3 +61,10 @@ fieldset {
             border: 1px solid grey;
             font-size: 15px;
         }
+
+        .formulario__fila {
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            margin: 3px;
+        }
