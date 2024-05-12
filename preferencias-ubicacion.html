@@ -11,24 +11,26 @@
 <body>
     <main class="cuerpo">
         <form class="formulario" action="./html/idioma.html">
-            <h3 class="formulario__pregunta" name="noticias-locales" for="">¿Quieres recibir noticias locales?</h3>
-            <div class="formulario__chekbox">
-                <label class="formulario__parrafo">
-                    <input id="acepto" class="formulario--input-radio" name="noticias-locales" type="radio" value="SI">SI
-                </label>
-                <label id="rechazo" class="formulario__parrafo">
-                    <input class="formulario--input-radio" name="noticias-locales" type="radio" value="NO">NO
-                </label>
-            </div>
-            <div class="formulario__oculto">
-                <p class="formulario__parrafo--oculto">
-                    Selecciona los paises de las cuales deseas recibir informacion</p>
-                <!--<iframe class="formulario__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1VbnZPL1FApi8Q2EiIlbE1KAuUlDv28k&ehbc=2E312F" width="640" height="480"></iframe>-->
-                
-            </div>
-                
-                
-                <button>Siguiente</button>
+            <fieldset>
+                <legend class="formulario__legend">¿Quieres recibir noticias locales?</legend>
+                <div class="formulario__chekbox">
+                    <label  class="formulario__parrafo">
+                        <input id="acepto" class="formulario--input-radio" name="noticias-locales" type="radio" value="SI">SI
+                    </label>
+                    <label class="formulario__parrafo">
+                        <input id="rechazo" class="formulario--input-radio" name="noticias-locales" type="radio" value="NO">NO
+                    </label>
+                </div>
+                <div class="formulario__oculto">
+                    <p class="formulario__parrafo--oculto">
+                        Selecciona los paises de las cuales deseas recibir informacion</p>
+                    <iframe class="formulario__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1VbnZPL1FApi8Q2EiIlbE1KAuUlDv28k&ehbc=2E312F" width="640" height="480"></iframe>
+                    
+                </div>
+                    
+                    
+                    <button class="formulario__btn">Siguiente</button>
+                </fieldset>
         </form>
         
     </main>
