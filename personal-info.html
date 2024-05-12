@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./css/estilos-formularios.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-    <form id="formulario-info-personal" action="https://ecampus.rocks/test-forms.php">
+    <form class="formulario" id="formulario-info-personal" action="https://ecampus.rocks/test-forms.php">
         <fieldset>
-            <legend>Información personal</legend>
+            <legend class="formulario__legend">Información personal</legend>
                 <label for="nombre">Indica tu nombre completo:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Indica tu nombre y apellido" required>
+                <input class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Indica tu nombre y apellido" required>
                 <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <input class="formulario__input" type="password" name="password" id="password" placeholder="Contraseña" required>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                <input class="formulario__input" type="email" name="email" id="email" placeholder="Escribe tu email" required>
                 
-                <input class="enviar" type="submit" value="Enviar">
+                <input class="boton--enviar" type="submit" value="Enviar">
             </fieldset>
         </form>
     </div>
