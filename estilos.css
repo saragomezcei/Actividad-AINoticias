@@ -1,0 +1,63 @@
+* {
+    font-family: "montserrat";
+}
+
+
+
+body {
+    background-color: #cdaad3;
+}
+
+fieldset {
+    border: 2px solid #704c61;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    padding-top: 10px;
+}
+
+legend {
+    font-size: larger;
+    font-weight: bold;
+    color: #a24cb1;
+    border-radius: 10px;
+    background-color: #fdefff;
+    padding: 5px 15px 5px 15px;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    font-family: "montserrat";
+}
+
+.enviar {
+    border: 2px solid #a24cb1;
+    background-color: #a24cb1;
+    border-radius: 20px;
+    color: white;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px 5px 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+}
+
+input, select {
+            margin: 10px;
+            border-radius: 5px;
+            border-color: white;
+            border: 1px solid grey;
+            font-size: 15px;
+        }
