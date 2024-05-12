@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos-formularios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <form class="formulario" id="formulario-info-personal" action="https://ecampus.rocks/test-forms.php">
+        <fieldset>
+            <legend class="formulario__legend">Idioma</legend>
+                
+                <label for="idioma">Elige el idioma en el que quieres recibir las noticias:</label>
+                <select class="formulario__select" name="idioma" id="idioma" required>
+                    <optgroup label="Elige tu idioma">
+                        <option value="es">Español</option>
+                        <option value="pt">Portugués</option>
+                        <option value="fr">Francés</option>
+                        <option value="en">Inglés</option>
+                        <option value="de">Alemán</option>
+                        <option value="it">Italiano</option>
+                    </optgroup>
+                </select>
+
+                <input class="boton--enviar" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+    </body>
+
+</html>

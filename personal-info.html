@@ -18,10 +18,19 @@
                 <label for="nombre">Indica tu nombre completo:</label>
                 <input class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Indica tu nombre y apellido" required>
                 <label for="password">Contraseña:</label>
-                <input class="formulario__input" type="password" name="password" id="password" placeholder="Contraseña" required>
+                <input class="formulario__input" type="password" name="password" id="password" required>
                 <label for="email">Email:</label>
-                <input class="formulario__input" type="email" name="email" id="email" placeholder="Escribe tu email" required>
-                
+                <input class="formulario__input" type="email" name="email" id="email" required>
+                <label for="pais">País:</label>
+                <select class="formulario__select" name="pais" id="pais" required>
+                    <optgroup label="Elige tu país">
+                        <option value="opcion1">España</option>
+                        <option value="opcion2">Portugal</option>
+                        <option value="opcion3">Francia</option>
+                        <option value="opcion4">Andorra</option>
+                    </optgroup>
+                </select>
+
                 <input class="boton--enviar" type="submit" value="Enviar">
             </fieldset>
         </form>
