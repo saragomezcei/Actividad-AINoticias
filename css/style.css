@@ -1,0 +1,83 @@
+body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.cuerpo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formulario{
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #ba55d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formulario__pregunta{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: darkblue;
+    margin: 10px;
+}
+.formulario__parrafo{
+    font-size: 18px;
+    margin: 20px;
+}
+.formulario__parrafo--oculto{
+    font-size: 18px;
+    margin: 5px;
+}
+.formulario__chekbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.formulario__oculto{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario__iframe{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.formulario--input-radio {
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 0;
+    margin-right: 5px;
+}
+.formulario--input-radio:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -3px;
+    left: -20px;
+    border: 2px solid #ba55d3;
+    border-radius: 30px;
+    background-color: white;
+}
+.formulario--input-radio:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: -14px;
+}
