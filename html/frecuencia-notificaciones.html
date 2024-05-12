@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones</title>
+    <link rel="stylesheet" href="../css/estilos-formularios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="formulario" id="formulario-notificaciones" action="https://ecampus.rocks/test-forms.php">
+            <fieldset>
+                <legend class="formulario__legend">Notificaciones</legend>
+                <label for="notificaciones">¿Con qué frecuencia te gustaría recibir notificaciones?</label>
+                <div class="formulario__fila">
+                    <input type="radio" name="frecuencia" value="1" required>Diariamente
+                </div>
+                <div class="formulario__fila"><input type="radio" name="frecuencia" value="2">Semanalmente</div>
+                <div class="formulario__fila"><input type="radio" name="frecuencia" value="3">Mensualmente</div>
+                <div class="formulario__fila"><input type="radio" name="frecuencia" value="3">No deseo recibir notificaciones</div>
+                <input class="boton--enviar" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

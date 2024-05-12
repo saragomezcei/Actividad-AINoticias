@@ -54,7 +54,8 @@ fieldset {
     justify-content: center;
 }
 
-.formulario__input, .formulario__select {
+.formulario__input, .formulario__select,
+.formulario__textarea {
             margin: 10px;
             border-radius: 5px;
             border-color: white;
