@@ -117,8 +117,7 @@ fieldset {
     font-size: 16px;
 }
 
-.signin__link,
-.login__link {
+.btn__link {
     list-style: none;
     text-decoration: none;
     color: #ffffff;
@@ -213,4 +212,10 @@ bottom: 0;
 
 .menu__item p{
     color: #ffffff;
+}
+
+.terms {
+    display: flex;
+    gap: 8px;
+    margin-left: 4px;
 }
