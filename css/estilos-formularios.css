@@ -1,23 +1,28 @@
 * {
     font-family: "montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 
 body {
     background-color: #cdaad3;
+    height: 100vh;
 }
 
 fieldset {
     border: 2px solid #704c61;
     border-radius: 15px;
-    background-color: #ffffff;
+    background-color: #ffffff90;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 80%;
     max-width: 500px;
-    padding-top: 10px;
+    padding: 16px;
+    margin: 16px;
 }
 
 .formulario__legend {
@@ -36,16 +41,6 @@ fieldset {
     font-family: "montserrat";
 }
 
-.boton--enviar {
-    border: 2px solid #a24cb1;
-    background-color: #a24cb1;
-    border-radius: 20px;
-    color: white;
-    width: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 15px 5px 15px;
-}
 
 .container {
     display: flex;
@@ -54,18 +49,168 @@ fieldset {
     justify-content: center;
 }
 
-.formulario__input, .formulario__select,
+.formulario__input,
+.formulario__select,
 .formulario__textarea {
-            margin: 10px;
-            border-radius: 5px;
-            border-color: white;
-            border: 1px solid grey;
-            font-size: 15px;
-        }
+    height: 48px;
+    width: 100%;
+    margin: 8px 0 16px 0;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+}
 
-        .formulario__fila {
-            flex-direction: row;
-            gap: 5px;
-            align-items: center;
-            margin: 3px;
-        }
+.formulario__fila {
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin: 3px;
+}
+
+.formulario__texto {
+    text-align: center;
+}
+
+/* Estilos pantalla login */
+
+.login,
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.login__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+
+/* Estilos pantalla signin */
+
+.signin__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 24px;
+    width: 70%;
+}
+
+
+.btn {
+    background-color: #a24cb1;
+    color: #ffffff;
+    padding: 16px 24px;
+    margin: 16px auto;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.signin__link,
+.login__link {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.signin__btn:hover {
+    background-color: #7a3088;
+    color: #ffffff;
+    padding: 16px 24px;
+    margin: 24px auto;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin__form input {
+    height: 48px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+}
+
+.signin__form input:focus {
+    height: 48px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: solid 2px #7a3088;
+}
+
+/* Estilos inicio news */
+.newscontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.newscontainer__logo {
+    margin: 24px 0 0 24px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 56px 16px;
+    background-color: #ffffff;
+}
+
+.news__section {
+    border-bottom: 2px solid #7a3088;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section__title {
+    color: #7a3088;
+    border-bottom: 1px solid #7a3088;
+}
+
+.article {
+    border-radius: 4px;
+    background-color: #cdaad3;
+    padding: 16px;
+}
+
+/* Estilos menú */
+
+.menu {
+width: 100%;
+height: 56px;
+padding-bottom: 24px;
+background-color: #7a3088;
+position: fixed;
+bottom: 0;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    background-color: #7a3088;
+    color: #ffffff;
+}
+
+.menu__item p{
+    color: #ffffff;
+}
