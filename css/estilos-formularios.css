@@ -219,3 +219,7 @@ bottom: 0;
     gap: 8px;
     margin-left: 4px;
 }
+
+.formulario__texto {
+    text-align: center;
+}
